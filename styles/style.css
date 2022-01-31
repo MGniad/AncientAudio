@@ -94,6 +94,27 @@ nav .links.visible ul li ul li {
   width: 100%;
 }
 
+.image-main {
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.image-main img {
+  width: 100%;
+  padding: 10px;
+  margin: 5px;
+  float: right;
+}
+
+.image-main p {
+  position: absolute;
+  color: #cfcfd6;
+  right: 10%;
+  bottom: 5%;
+  font-size: 1.5em;
+}
+
 body {
   background-color: aliceblue;
 }

@@ -1,0 +1,18 @@
+.image-main {
+  width: 100vw;
+  position: relative;
+  img {
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    float: right;
+  }
+  p {
+    position: absolute;
+    color: rgb(207, 207, 214);
+    right: 10%;
+    bottom: 5%;
+    font-size: 1.5em;
+  }
+  overflow: hidden;
+}
