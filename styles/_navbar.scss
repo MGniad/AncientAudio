@@ -1,4 +1,4 @@
-$mainBackgroundColor: darkorange;
+$mainBackgroundColor: rgba(243, 229, 211, 0.445);
 $secondaryBackgroundColor: red;
 
 a {
@@ -6,46 +6,78 @@ a {
 }
 nav {
   font-family: monospace;
-  ul {
-    background: $mainBackgroundColor;
-    list-style: none;
-    margin: 0;
-    padding-left: 0;
-    li {
-      color: #fff;
-      background: $mainBackgroundColor;
-      display: flex;
-      flex-direction: column;
-      padding: 1rem;
-      position: relative;
-      text-decoration: none;
-      transition-duration: 0.5s;
-      & ul,
-      &:hover {
-        background: $secondaryBackgroundColor;
-        cursor: pointer;
 
-        & > ul {
-          visibility: visible;
-          opacity: 1;
-          display: block;
-        }
+  .hamburger {
+    .bar1,
+    .bar2,
+    .bar3 {
+      width: 35px;
+      height: 5px;
+      background-color: #333;
+      margin: 6px 0;
+      transition: 0.4s;
+    }
+    &.change {
+      .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
       }
-      ul {
-        background: blue;
-        visibility: hidden;
+      .bar2 {
         opacity: 0;
-        min-width: 5rem;
-        position: absolute;
-        transition: all 0.5s ease;
-        margin-top: 1rem;
-        right: 50%;
-        display: none;
-        z-index: 120;
-
+      }
+      .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+      }
+    }
+  }
+  .links {
+    opacity: 0;
+    &.visible {
+      opacity: 1;
+      ul {
+        background: $mainBackgroundColor;
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+        width: 50%;
         li {
-          clear: both;
-          width: 100%;
+          color: #fff;
+          background: $mainBackgroundColor;
+          display: flex;
+          flex-direction: column;
+          padding: 1rem;
+          position: relative;
+          text-decoration: none;
+          transition-duration: 0.5s;
+          & ul,
+          &:hover {
+            background: $secondaryBackgroundColor;
+            cursor: pointer;
+
+            & > ul {
+              visibility: visible;
+              opacity: 1;
+              display: block;
+            }
+          }
+          ul {
+            background: rgba(0, 0, 255, 0.356);
+            visibility: hidden;
+            opacity: 0;
+            min-width: 5rem;
+            position: absolute;
+            transition: all 0.5s ease;
+            margin-top: 1rem;
+            left: 50%;
+            display: none;
+            z-index: 120;
+
+            li {
+              clear: both;
+              width: 100%;
+            }
+          }
         }
       }
     }
