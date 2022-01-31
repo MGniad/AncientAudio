@@ -1,0 +1,53 @@
+$mainBackgroundColor: darkorange;
+$secondaryBackgroundColor: red;
+
+a {
+  text-decoration: none;
+}
+nav {
+  font-family: monospace;
+  ul {
+    background: $mainBackgroundColor;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    li {
+      color: #fff;
+      background: $mainBackgroundColor;
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      position: relative;
+      text-decoration: none;
+      transition-duration: 0.5s;
+      & ul,
+      &:hover {
+        background: $secondaryBackgroundColor;
+        cursor: pointer;
+
+        & > ul {
+          visibility: visible;
+          opacity: 1;
+          display: block;
+        }
+      }
+      ul {
+        background: blue;
+        visibility: hidden;
+        opacity: 0;
+        min-width: 5rem;
+        position: absolute;
+        transition: all 0.5s ease;
+        margin-top: 1rem;
+        right: 50%;
+        display: none;
+        z-index: 120;
+
+        li {
+          clear: both;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

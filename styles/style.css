@@ -1,0 +1,70 @@
+a {
+  text-decoration: none;
+}
+
+nav {
+  font-family: monospace;
+}
+
+nav ul {
+  background: darkorange;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+nav ul li {
+  color: #fff;
+  background: darkorange;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+nav ul li ul, nav ul li:hover {
+  background: red;
+  cursor: pointer;
+}
+
+nav ul li ul > ul, nav ul li:hover > ul {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+nav ul li ul {
+  background: blue;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  right: 50%;
+  display: none;
+  z-index: 120;
+}
+
+nav ul li ul li {
+  clear: both;
+  width: 100%;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */
