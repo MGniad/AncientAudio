@@ -151,6 +151,25 @@ nav .links.visible ul li ul li {
   font-size: 1.5em;
 }
 
+.sections {
+  width: 100%;
+  height: 100vh;
+}
+
+.sections .panel {
+  padding: 10px;
+  overflow: hidden;
+}
+
+.sections .panel img {
+  max-height: 100vh;
+}
+
+.sections .panel img .scale-up {
+  width: 1170px;
+  height: auto;
+}
+
 body {
   background-color: aliceblue;
   max-width: 1170px;

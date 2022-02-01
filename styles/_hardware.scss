@@ -1,0 +1,15 @@
+.sections {
+  width: 100%;
+  height: 100vh;
+  .panel {
+    padding: 10px;
+    overflow: hidden;
+    img {
+      max-height: 100vh;
+      .scale-up {
+        width: 1170px;
+        height: auto;
+      }
+    }
+  }
+}

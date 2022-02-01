@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./static/glider.css" />
     <title>Document</title>
   </head>
   <body>
@@ -154,24 +155,61 @@
         </div>
       </nav>
 
-      <div class="about" id="about"></div>
-      <div class="speakers-processors" id="processors"></div>
-      <div class="speakers" id="speakers"></div>
-      <div class="amp" id="amp"></div>
-      <div class="preamp" id="preamp"></div>
-      <div class="cd-players" id="players"></div>
-      <div class="archive" id="archive"></div>
-      <div class="contact" id="contact"></div>
-    </div>
-    <script>
-      function hamburgerFunction() {
-        const x = document.querySelector(".hamburger");
-        const y = document.querySelector(".links");
+      <div class="sections">
+        <div class="about" id="about">
+          <div class="glider">
+            <div>
+              <a href="./pages/company.html"
+                ><div class="panel">
+                  <img
+                    src="./static/img/ancient_audio/u113_c.jpg"
+                    alt="company"
+                  />
+                  <h2>Our Company</h2>
+                  <p>Our philosophy</p>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a href="./pages/history.html">
+              <div class="panel">
+                <img class="scale-up"
+                  src="./static/img/ancient_audio/u117_c.png"
+                  alt="founder"
+                /> <div class="text-wrapper"><h2>History</h2>
+                  <p>How we started and what we achieved</p></div>
+                
+              </a>
+              </div>
+            </div>
+            <div>
+              <a href="./pages/press.html">
+                <div class="panel">
+                  <img
+                    src="./static/img/ancient_audio/large_u119_c.jpg"
+                    alt="press"
+                  />
+                  <h2>Press</h2>
+                  <p>What world-renowned media are writing about us</p>
+                </div>
+              </a>
+            </div>
+          </div>
 
-        x.classList.toggle("change");
-        y.classList.toggle("visible");
-      }
-    </script>
+          
+          <div role="tablist" class="dots"></div>
+        </div>
+        <div class="speakers-processors" id="processors"></div>
+        <div class="speakers" id="speakers"></div>
+        <div class="amp" id="amp"></div>
+        <div class="preamp" id="preamp"></div>
+        <div class="cd-players" id="players"></div>
+        <div class="archive" id="archive"></div>
+        <div class="contact" id="contact"></div>
+      </div>
+    </div>
+    <script src="static/script.js"></script>
+    <script src="static/glider.js"></script>
   </body>
   <footer></footer>
 </html>
