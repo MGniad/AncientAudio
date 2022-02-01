@@ -1,4 +1,4 @@
-$mainBackgroundColor: rgba(243, 229, 211, 0.445);
+$mainBackgroundColor: rgba(255, 255, 255, 0.445);
 $secondaryBackgroundColor: red;
 
 a {
@@ -7,8 +7,9 @@ a {
 nav {
   z-index: 1000;
   display: flex;
-  position: sticky;
-
+  position: fixed;
+  width: 100%;
+  background-color: white;
   flex-wrap: nowrap;
   flex-direction: column;
   .nav-bar {
@@ -55,6 +56,9 @@ nav {
     display: none;
     opacity: 0;
     top: 70px;
+    padding: 5px;
+    font-size: 1em;
+    color: black;
     &.visible {
       opacity: 1;
       display: block;
@@ -85,13 +89,13 @@ nav {
             }
           }
           ul {
-            background: rgba(0, 0, 255, 0.356);
+            background: rgba(244, 244, 248, 0.356);
             visibility: hidden;
             opacity: 0;
             min-width: 5rem;
             position: absolute;
             transition: all 0.5s ease;
-            margin-top: 1rem;
+            top: 0;
             left: 100%;
             display: none;
             z-index: 120;
