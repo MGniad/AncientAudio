@@ -5,6 +5,7 @@ a {
   text-decoration: none;
 }
 nav {
+  z-index: 1000;
   display: flex;
   position: sticky;
 
