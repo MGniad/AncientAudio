@@ -121,7 +121,7 @@ nav .links.visible ul li ul {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   margin-top: 1rem;
-  left: 50%;
+  left: 100%;
   display: none;
   z-index: 120;
 }
