@@ -151,6 +151,7 @@ nav .links.visible ul li ul li {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
+  float: right;
   overflow: hidden;
 }
 
