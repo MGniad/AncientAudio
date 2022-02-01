@@ -5,9 +5,18 @@ a {
   text-decoration: none;
 }
 nav {
-  font-family: monospace;
+  display: flex;
 
+  flex-wrap: nowrap;
+  flex-direction: column;
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: black 1px solid;
+  }
   .hamburger {
+    margin: 3% 15px;
+    width: 20%;
     .bar1,
     .bar2,
     .bar3 {
@@ -31,8 +40,18 @@ nav {
       }
     }
   }
+  .logo {
+    width: 30%;
+    float: left;
+
+    img {
+      width: 100%;
+    }
+  }
   .links {
+    position: absolute;
     opacity: 0;
+    top: 5%;
     &.visible {
       opacity: 1;
       ul {
