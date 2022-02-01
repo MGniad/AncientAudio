@@ -52,10 +52,12 @@ nav {
   }
   .links {
     position: absolute;
+    display: none;
     opacity: 0;
     top: 70px;
     &.visible {
       opacity: 1;
+      display: block;
       ul {
         background: $mainBackgroundColor;
         list-style: none;

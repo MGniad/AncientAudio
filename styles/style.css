@@ -68,12 +68,14 @@ nav .logo img {
 
 nav .links {
   position: absolute;
+  display: none;
   opacity: 0;
   top: 70px;
 }
 
 nav .links.visible {
   opacity: 1;
+  display: block;
 }
 
 nav .links.visible ul {
