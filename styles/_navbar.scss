@@ -6,6 +6,7 @@ a {
 }
 nav {
   display: flex;
+  position: sticky;
 
   flex-wrap: nowrap;
   flex-direction: column;
