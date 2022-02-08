@@ -219,6 +219,7 @@ nav .links.visible ul li ul li a {
 }
 
 .sections .panel {
+  height: 98vh;
   margin: 10px;
   overflow: hidden;
   position: relative;
