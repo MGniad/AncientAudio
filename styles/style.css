@@ -29,6 +29,17 @@ nav .nav-bar {
   max-height: 90px;
 }
 
+nav .return-button {
+  width: 20%;
+  text-align: center;
+}
+
+nav .return-button p {
+  color: #d4b66c;
+  font-size: 40px;
+  margin: 10px;
+}
+
 nav .hamburger {
   color: #d4b66c;
   margin: 5px 15px;
@@ -184,8 +195,29 @@ nav .links.visible ul li ul li a {
   overflow: auto;
 }
 
+.section ul {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+.section ul li {
+  font-size: 20px;
+}
+
+.section ul li:before {
+  content: "\01F4A1";
+  padding-right: 5px;
+}
+
+.section p {
+  font-size: 20px;
+}
+
 .image-main {
   width: 100%;
+  padding-bottom: 15px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -195,12 +227,11 @@ nav .links.visible ul li ul li a {
           justify-content: left;
   float: right;
   overflow: hidden;
+  overflow: hidden;
 }
 
 .image-main img {
   height: 50vh;
-  padding: 10px;
-  margin: 5px;
   float: right;
 }
 
@@ -253,7 +284,7 @@ nav .links.visible ul li ul li a {
 }
 
 body {
-  background-color: aliceblue;
+  background-color: white;
   max-width: 1170px;
   margin: 0 auto;
   font-family: "Roboto", sans-serif;

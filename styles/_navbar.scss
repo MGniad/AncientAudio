@@ -20,6 +20,15 @@ nav {
     justify-content: space-between;
     max-height: 90px;
   }
+  .return-button {
+    width: 20%;
+    text-align: center;
+    p {
+      color: $navTextColor;
+      font-size: 40px;
+      margin: 10px;
+    }
+  }
   .hamburger {
     color: $navTextColor;
     margin: 5px 15px;

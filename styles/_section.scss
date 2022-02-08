@@ -1,17 +1,33 @@
 .section {
   padding: 10px;
   overflow: auto;
+  ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 1em;
+    text-indent: -1em;
+    li {
+      font-size: 20px;
+    }
+    li:before {
+      content: "\01F4A1";
+      padding-right: 5px;
+    }
+  }
+  p {
+    font-size: 20px;
+  }
 }
 .image-main {
   width: 100%;
+  padding-bottom: 15px;
   position: relative;
   display: flex;
   justify-content: left;
   float: right;
+  overflow: hidden;
   img {
     height: 50vh;
-    padding: 10px;
-    margin: 5px;
     float: right;
   }
   p {
