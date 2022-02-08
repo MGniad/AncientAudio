@@ -1,6 +1,6 @@
 .section {
   padding: 10px;
-  overflow: auto;
+  // overflow: auto;
   ul {
     list-style-type: none;
     margin-left: 0;
@@ -15,7 +15,12 @@
     }
   }
   p {
+    text-align: justify;
+    text-justify: inter-word;
     font-size: 20px;
+  }
+  img {
+    width: 100%;
   }
 }
 .image-main {
@@ -27,7 +32,7 @@
   float: right;
   overflow: hidden;
   img {
-    height: 50vh;
+    height: 65vh;
     float: right;
   }
   p {

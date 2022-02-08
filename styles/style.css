@@ -192,7 +192,6 @@ nav .links.visible ul li ul li a {
 
 .section {
   padding: 10px;
-  overflow: auto;
 }
 
 .section ul {
@@ -212,7 +211,13 @@ nav .links.visible ul li ul li a {
 }
 
 .section p {
+  text-align: justify;
+  text-justify: inter-word;
   font-size: 20px;
+}
+
+.section img {
+  width: 100%;
 }
 
 .image-main {
@@ -231,7 +236,7 @@ nav .links.visible ul li ul li a {
 }
 
 .image-main img {
-  height: 50vh;
+  height: 65vh;
   float: right;
 }
 
