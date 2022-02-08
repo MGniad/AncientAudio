@@ -1,5 +1,5 @@
 $mainBackgroundColor: rgba(255, 255, 255, 0.178);
-$secondaryBackgroundColor: red;
+$secondaryBackgroundColor: rgb(255, 255, 255);
 $navTextColor: #d4b66c;
 
 a {
@@ -82,13 +82,13 @@ nav {
       opacity: 1;
       display: block;
       ul {
-        background: $mainBackgroundColor;
+        background: $secondaryBackgroundColor;
         list-style: none;
         margin: 0;
         padding-left: 0;
         width: 50%;
         li {
-          background: $mainBackgroundColor;
+          background: $secondaryBackgroundColor;
           display: flex;
           flex-direction: column;
           padding: 1rem;
