@@ -31,13 +31,13 @@ nav .nav-bar {
 
 nav .return-button {
   width: 20%;
-  text-align: center;
+  text-align: left;
 }
 
 nav .return-button p {
   color: #d4b66c;
   font-size: 40px;
-  margin: 10px;
+  margin: 10px 25px;
 }
 
 nav .hamburger {
@@ -216,6 +216,24 @@ nav .links.visible ul li ul li a {
   font-size: 20px;
 }
 
+.section img:first-child {
+  width: auto;
+}
+
+@media (max-width: 650px) {
+  .section img:first-child {
+    -webkit-transform: translateX(-25%);
+            transform: translateX(-25%);
+  }
+}
+
+@media (max-width: 400px) {
+  .section img:first-child {
+    -webkit-transform: translateX(-35%);
+            transform: translateX(-35%);
+  }
+}
+
 .section img {
   width: 100%;
 }
@@ -266,6 +284,10 @@ nav .links.visible ul li ul li a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.sections .panel .glider-dots {
+  position: absolute;
 }
 
 .sections .panel img {

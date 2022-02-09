@@ -20,7 +20,7 @@ window.addEventListener("load", function () {
 window.addEventListener("load", function () {
   new Glider(document.querySelector(".glider2"), {
     slidesToShow: 1,
-    dots: "#dots",
+    dots: ".dots2",
     draggable: true,
     arrows: {
       prev: ".glider-prev",
@@ -31,7 +31,7 @@ window.addEventListener("load", function () {
 window.addEventListener("load", function () {
   new Glider(document.querySelector(".glider3"), {
     slidesToShow: 1,
-    dots: "#dots",
+    dots: ".dots3",
     draggable: true,
     arrows: {
       prev: ".glider-prev",
@@ -42,7 +42,7 @@ window.addEventListener("load", function () {
 window.addEventListener("load", function () {
   new Glider(document.querySelector(".glider4"), {
     slidesToShow: 1,
-    dots: "#dots",
+    dots: ".dots4",
     draggable: true,
     arrows: {
       prev: ".glider-prev",
@@ -53,7 +53,7 @@ window.addEventListener("load", function () {
 window.addEventListener("load", function () {
   new Glider(document.querySelector(".glider5"), {
     slidesToShow: 1,
-    dots: "#dots",
+    dots: ".dots5",
     draggable: true,
     arrows: {
       prev: ".glider-prev",
@@ -64,7 +64,7 @@ window.addEventListener("load", function () {
 window.addEventListener("load", function () {
   new Glider(document.querySelector(".glider6"), {
     slidesToShow: 1,
-    dots: "#dots",
+    dots: ".dots6",
     draggable: true,
     arrows: {
       prev: ".glider-prev",

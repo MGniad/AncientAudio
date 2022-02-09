@@ -22,11 +22,11 @@ nav {
   }
   .return-button {
     width: 20%;
-    text-align: center;
+    text-align: left;
     p {
       color: $navTextColor;
       font-size: 40px;
-      margin: 10px;
+      margin: 10px 25px;
     }
   }
   .hamburger {
