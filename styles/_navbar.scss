@@ -28,113 +28,114 @@ nav {
       font-size: 40px;
       margin: 10px 25px;
     }
-  }
-  .hamburger {
-    color: $navTextColor;
-    margin: 5px 15px;
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    .bar1,
-    .bar2,
-    .bar3 {
-      width: 35px;
-      height: 5px;
-      background-color: $navTextColor;
-      border-radius: 5px;
-      margin: 3px 15px;
-      transition: 0.4s;
-    }
-    &.change {
-      .bar1 {
-        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-        transform: rotate(-45deg) translate(-9px, 6px);
-      }
-      .bar2 {
-        opacity: 0;
-      }
+
+    .hamburger {
+      color: $navTextColor;
+      margin: 5px 15px;
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .bar1,
+      .bar2,
       .bar3 {
-        -webkit-transform: rotate(45deg) translate(-8px, -8px);
-        transform: rotate(45deg) translate(-8px, -8px);
+        width: 35px;
+        height: 5px;
+        background-color: $navTextColor;
+        border-radius: 5px;
+        margin: 3px 15px;
+        transition: 0.4s;
+      }
+      &.change {
+        .bar1 {
+          -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+          transform: rotate(-45deg) translate(-9px, 6px);
+        }
+        .bar2 {
+          opacity: 0;
+        }
+        .bar3 {
+          -webkit-transform: rotate(45deg) translate(-8px, -8px);
+          transform: rotate(45deg) translate(-8px, -8px);
+        }
       }
     }
-  }
-  .logo {
-    width: 20%;
-    display: flex;
-    float: left;
-    padding-right: 15px;
-    @media (max-width: 900px) {
-      width: 25%;
-    }
-    @media (max-width: 650px) {
-      width: 40%;
-    }
+    .logo {
+      width: 20%;
+      display: flex;
+      float: left;
+      padding-right: 15px;
+      @media (max-width: 900px) {
+        width: 25%;
+      }
+      @media (max-width: 650px) {
+        width: 40%;
+      }
 
-    img {
-      width: 100%;
+      img {
+        width: 100%;
+      }
     }
-  }
-  .links {
-    position: absolute;
-    display: none;
-    opacity: 0;
-    top: 95%;
-    padding: 5px;
-    font-size: 1em;
-    color: $navTextColor;
-    @media (max-width: 900px) {
-      top: 90%;
-    }
-    &.visible {
-      opacity: 1;
-      display: block;
-      ul {
-        background: $secondaryBackgroundColor;
-        list-style: none;
-        margin: 0;
-        padding-left: 0;
-        width: 50%;
-        li {
+    .links {
+      position: absolute;
+      display: none;
+      opacity: 0;
+      top: 95%;
+      padding: 5px;
+      font-size: 1em;
+      color: $navTextColor;
+      @media (max-width: 900px) {
+        top: 90%;
+      }
+      &.visible {
+        opacity: 1;
+        display: block;
+        ul {
           background: $secondaryBackgroundColor;
-          display: flex;
-          flex-direction: column;
-          padding: 1rem;
-          position: relative;
-          text-decoration: none;
-          transition-duration: 0.5s;
-          a {
-            color: $navTextColor;
-          }
-          & ul,
-          &:hover {
+          list-style: none;
+          margin: 0;
+          padding-left: 0;
+          width: 50%;
+          li {
             background: $secondaryBackgroundColor;
-            cursor: pointer;
-
-            & > ul {
-              visibility: visible;
-              opacity: 1;
-              display: block;
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            position: relative;
+            text-decoration: none;
+            transition-duration: 0.5s;
+            a {
+              color: $navTextColor;
             }
-          }
-          ul {
-            background: rgba(244, 244, 248, 0.356);
-            visibility: hidden;
-            opacity: 0;
-            min-width: 5rem;
-            position: absolute;
-            transition: all 0.5s ease;
-            top: 0;
-            left: 100%;
-            display: none;
-            z-index: 120;
+            & ul,
+            &:hover {
+              background: $secondaryBackgroundColor;
+              cursor: pointer;
 
-            li {
-              clear: both;
-              width: 100%;
-              a {
-                color: $navTextColor;
+              & > ul {
+                visibility: visible;
+                opacity: 1;
+                display: block;
+              }
+            }
+            ul {
+              background: rgba(244, 244, 248, 0.356);
+              visibility: hidden;
+              opacity: 0;
+              min-width: 5rem;
+              position: absolute;
+              transition: all 0.5s ease;
+              top: 0;
+              left: 100%;
+              display: none;
+              z-index: 120;
+
+              li {
+                clear: both;
+                width: 100%;
+                a {
+                  color: $navTextColor;
+                }
               }
             }
           }
