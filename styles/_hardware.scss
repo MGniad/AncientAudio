@@ -20,11 +20,21 @@
       }
     }
     .text-wrapper {
+      width: 100%;
       position: absolute;
-      bottom: 10%;
+      bottom: 15%;
       right: 5%;
       color: white;
       text-align: right;
+      .main-line {
+        position: absolute;
+        background-color: white;
+        height: 2px;
+        min-width: 180px;
+        width: 33%;
+        right: 0;
+        top: 50px;
+      }
       p {
         text-align: right;
       }

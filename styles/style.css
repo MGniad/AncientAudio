@@ -192,6 +192,47 @@ nav .nav-bar .links.visible ul li ul li a {
 
 .section {
   padding: 10px;
+  overflow: hidden;
+}
+
+.section .image-main {
+  width: 100%;
+  padding-bottom: 15px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  float: right;
+  overflow: hidden;
+}
+
+.section .image-main img {
+  width: 150%;
+  height: 75vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.section .image-main p {
+  position: absolute;
+  color: #cfcfd6;
+  right: 10%;
+  bottom: 5%;
+  font-size: 2em;
+}
+
+.section .image-main .line {
+  position: absolute;
+  background-color: #cfcfd6;
+  right: 10%;
+  bottom: 9%;
+  height: 2px;
+  width: 33%;
 }
 
 .section ul {
@@ -216,54 +257,8 @@ nav .nav-bar .links.visible ul li ul li a {
   font-size: 20px;
 }
 
-.section img:first-child {
-  width: auto;
-}
-
-@media (max-width: 650px) {
-  .section img:first-child {
-    -webkit-transform: translateX(-25%);
-            transform: translateX(-25%);
-  }
-}
-
-@media (max-width: 400px) {
-  .section img:first-child {
-    -webkit-transform: translateX(-35%);
-            transform: translateX(-35%);
-  }
-}
-
 .section img {
   width: 100%;
-}
-
-.image-main {
-  width: 100%;
-  padding-bottom: 15px;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  float: right;
-  overflow: hidden;
-  overflow: hidden;
-}
-
-.image-main img {
-  height: 65vh;
-  float: right;
-}
-
-.image-main p {
-  position: absolute;
-  color: #cfcfd6;
-  right: 10%;
-  bottom: 5%;
-  font-size: 1.5em;
 }
 
 .sections {
@@ -299,11 +294,22 @@ nav .nav-bar .links.visible ul li ul li a {
 }
 
 .sections .panel .text-wrapper {
+  width: 100%;
   position: absolute;
-  bottom: 10%;
+  bottom: 15%;
   right: 5%;
   color: white;
   text-align: right;
+}
+
+.sections .panel .text-wrapper .main-line {
+  position: absolute;
+  background-color: white;
+  height: 2px;
+  min-width: 180px;
+  width: 33%;
+  right: 0;
+  top: 50px;
 }
 
 .sections .panel .text-wrapper p {
@@ -319,5 +325,9 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.welcome-card {
+  width: 1170px;
 }
 /*# sourceMappingURL=style.css.map */

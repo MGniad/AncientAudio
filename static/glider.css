@@ -104,11 +104,11 @@
   outline: none;
   display: block;
   cursor: pointer;
-  color: #ccc;
+  color: #fff;
   border-radius: 999px;
-  background: #ccc;
-  width: 12px;
-  height: 12px;
+  background: #fff;
+  width: 20px;
+  height: 20px;
   margin: 7px;
 }
 .glider-dot:hover,
