@@ -14,9 +14,16 @@
       position: absolute;
     }
     img {
-      max-height: 100vh;
+      @media (min-height: 401px) {
+        max-height: 100vh;
+      }
+
+      @media (max-height: 400px) {
+        width: 100%;
+      }
+      object-fit: cover;
       &.scale-up {
-        height: 1000px;
+        height: 1200px;
       }
     }
     .text-wrapper {

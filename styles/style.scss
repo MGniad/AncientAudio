@@ -1,6 +1,11 @@
 @import "./navbar";
 @import "./section";
 @import "./hardware";
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: white;
   max-width: 1170px;

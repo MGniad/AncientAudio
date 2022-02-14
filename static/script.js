@@ -9,7 +9,7 @@ function hamburgerFunction() {
 window.addEventListener("load", function () {
   new Glider(document.querySelector(".glider"), {
     slidesToShow: 1,
-    dots: ".dots",
+    dots: ".dots1",
     draggable: true,
     arrows: {
       prev: ".glider-prev",

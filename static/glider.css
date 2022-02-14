@@ -96,6 +96,11 @@
   padding: 0;
   transform: translateY(-300%);
 }
+@media (max-height: 400px) {
+  .glider-dots {
+    transform: translateY(-150%);
+  }
+}
 
 .glider-dot {
   border: 0;
@@ -111,8 +116,15 @@
   height: 20px;
   margin: 7px;
 }
+
 .glider-dot:hover,
 .glider-dot:focus,
 .glider-dot.active {
-  background: #d4b66c;
+  background: #b5a642;
+}
+
+.dots1 .glider-dot:hover,
+.dots1 .glider-dot:focus,
+.dots1 .glider-dot.active {
+  background: #eeca89;
 }

@@ -286,11 +286,24 @@ nav .nav-bar .links.visible ul li ul li a {
 }
 
 .sections .panel img {
-  max-height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-height: 401px) {
+  .sections .panel img {
+    max-height: 100vh;
+  }
+}
+
+@media (max-height: 400px) {
+  .sections .panel img {
+    width: 100%;
+  }
 }
 
 .sections .panel img.scale-up {
-  height: 1000px;
+  height: 1200px;
 }
 
 .sections .panel .text-wrapper {
@@ -314,6 +327,10 @@ nav .nav-bar .links.visible ul li ul li a {
 
 .sections .panel .text-wrapper p {
   text-align: right;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
