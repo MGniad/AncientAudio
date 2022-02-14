@@ -1,6 +1,7 @@
 @import "./navbar";
 @import "./section";
 @import "./hardware";
+@import "./welcome";
 
 html {
   scroll-behavior: smooth;
@@ -18,7 +19,40 @@ a {
 }
 
 .welcome-card {
-  width: 1170px;
-  .welcome-nav {
+  height: 100vh;
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  max-width: 1170px;
+  align-items: center;
+  
+  img{
+    max-width: 70vw;
+    height: 50vh;
+    object-fit: cover;
+  
+  }
+
+  .welcome-container {
+    img{
+      max-width: 80vw;
+    }
+    .button-container{
+      width: 100%;
+      display: flex;
+      @media (max-width:450px) {
+        flex-direction: column;
+      }
+      .button{
+        margin: 5px;
+        width: 33%;
+        background-color: antiquewhite;
+        padding: 35px 0;
+        text-align: center;
+        @media (max-width: 450px) {
+          width: 100%;
+        }
+      }
+    }
   }
 }

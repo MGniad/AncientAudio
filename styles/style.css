@@ -345,6 +345,59 @@ a {
 }
 
 .welcome-card {
-  width: 1170px;
+  height: 100vh;
+  margin: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 1170px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.welcome-card img {
+  max-width: 70vw;
+  height: 50vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.welcome-card .welcome-container img {
+  max-width: 80vw;
+}
+
+.welcome-card .welcome-container .button-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 450px) {
+  .welcome-card .welcome-container .button-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.welcome-card .welcome-container .button-container .button {
+  margin: 5px;
+  width: 33%;
+  background-color: antiquewhite;
+  padding: 35px 0;
+  text-align: center;
+}
+
+@media (max-width: 450px) {
+  .welcome-card .welcome-container .button-container .button {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
