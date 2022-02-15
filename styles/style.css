@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Freehand&family=Holtwood+One+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Freehand&family=Roboto:wght@300;400;500&display=swap");
 a {
   text-decoration: none;
 }
@@ -38,6 +40,23 @@ nav .nav-bar .return-button p {
   color: #d4b66c;
   font-size: 40px;
   margin: 10px 25px;
+}
+
+nav .nav-bar .section-title {
+  width: 20%;
+  text-align: left;
+}
+
+nav .nav-bar .section-title p {
+  color: #d4b66c;
+  font-size: 40px;
+  margin: 10px 25px;
+}
+
+@media (max-width: 450px) {
+  nav .nav-bar .section-title p {
+    font-size: 25px;
+  }
 }
 
 nav .nav-bar .hamburger {
@@ -261,6 +280,80 @@ nav .nav-bar .links.visible ul li ul li a {
   width: 100%;
 }
 
+.section-technology {
+  padding: 15px;
+  overflow: hidden;
+  background-image: url(../static/img/technology/Tlo_technology.jpg);
+}
+
+.section-technology .image-main {
+  width: 100%;
+  padding-top: 10%;
+  padding-bottom: 15px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  float: right;
+  overflow: hidden;
+}
+
+.section-technology .image-main img {
+  margin: 0 auto;
+  width: 75%;
+  height: 50vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.section-technology .image-main p {
+  position: absolute;
+  color: #cfcfd6;
+  right: 10%;
+  bottom: 5%;
+  font-size: 2em;
+}
+
+.section-technology .image-main .line {
+  position: absolute;
+  background-color: #cfcfd6;
+  right: 10%;
+  bottom: 9%;
+  height: 2px;
+  width: 33%;
+}
+
+.section-technology ul {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+.section-technology ul li {
+  font-size: 20px;
+}
+
+.section-technology ul li:before {
+  content: "\01F4A1";
+  padding-right: 5px;
+}
+
+.section-technology p {
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 20px;
+}
+
+.section-technology img {
+  width: 100%;
+}
+
 .sections {
   width: 100%;
   height: 100vh;
@@ -279,6 +372,29 @@ nav .nav-bar .links.visible ul li ul li a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.sections .panel .soon {
+  position: absolute;
+  z-index: 1000;
+  color: #e60303;
+  top: 30%;
+  font-size: 4em;
+  border: 10px red solid;
+  border-radius: 25px;
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+  font-family: 'Holtwood One SC', serif;
+}
+
+.sections .panel .section-title {
+  position: absolute;
+  z-index: 1000;
+  top: 10%;
+  left: 20px;
+  font-size: 30px;
+  color: white;
+  text-align: left;
 }
 
 .sections .panel .glider-dots {
@@ -345,7 +461,7 @@ a {
 }
 
 .welcome-card {
-  height: 100vh;
+  height: 90vh;
   margin: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -361,14 +477,19 @@ a {
 }
 
 .welcome-card img {
-  max-width: 70vw;
+  max-width: 100vw;
   height: 50vh;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.welcome-card .welcome-container img {
-  max-width: 80vw;
+.welcome-card .welcome-container .news img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  max-width: 100%;
+  padding: 5px;
 }
 
 .welcome-card .welcome-container .button-container {
@@ -388,16 +509,65 @@ a {
 }
 
 .welcome-card .welcome-container .button-container .button {
+  font-size: 40px;
   margin: 5px;
   width: 33%;
-  background-color: antiquewhite;
+  background-color: white;
   padding: 35px 0;
   text-align: center;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 @media (max-width: 450px) {
   .welcome-card .welcome-container .button-container .button {
     width: 100%;
   }
+}
+
+.welcome-card .welcome-container .button-container .button a {
+  color: #d4b66c;
+}
+
+.welcome-card .welcome-container .button-container .button:hover {
+  background-color: #d4b66c;
+}
+
+.welcome-card .welcome-container .button-container .button:hover a {
+  color: white;
+}
+
+.welcome-card .bottom {
+  font-size: 40px;
+  font-family: 'Freehand', cursive;
+  text-align: center;
+}
+
+.footer {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer p {
+  font-size: 15px;
+}
+
+.footer h1 {
+  font-size: 15px;
 }
 /*# sourceMappingURL=style.css.map */

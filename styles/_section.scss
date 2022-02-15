@@ -71,3 +71,78 @@ $textColor: rgb(207, 207, 214);
     width: 100%;
   }
 }
+$textColor: rgb(207, 207, 214);
+
+.section-technology {
+  padding: 15px;
+  overflow: hidden;
+  background-image: url(../static/img/technology/Tlo_technology.jpg);
+  .image-main {
+    width: 100%;
+    padding-top: 10%;
+    padding-bottom: 15px;
+    position: relative;
+    display: flex;
+    justify-content: left;
+    float: right;
+    overflow: hidden;
+    // .enlarge {
+    //   width: 1000px;
+    // }
+    img {
+      margin: 0 auto;
+      width: 75%;
+      height: 50vh;
+      object-fit: cover;
+      object-position: center;
+      // @media (min-width: 1170px) {
+      //   width: 200%;
+      // }
+    }
+    p {
+      position: absolute;
+      color: $textColor;
+      right: 10%;
+      bottom: 5%;
+      font-size: 2em;
+    }
+    .line {
+      position: absolute;
+      background-color: $textColor;
+      right: 10%;
+      bottom: 9%;
+      height: 2px;
+      width: 33%;
+    }
+  }
+  ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 1em;
+    text-indent: -1em;
+    li {
+      font-size: 20px;
+    }
+    li:before {
+      content: "\01F4A1";
+      padding-right: 5px;
+    }
+  }
+  p {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 20px;
+  }
+  // img:first-child {
+  //   width: auto;
+  //   @media (max-width: 650px) {
+  //     transform: translateX(-25%);
+  //   }
+  //   @media (max-width: 400px) {
+  //     transform: translateX(-35%);
+  //   }
+  // }
+  img {
+    width: 100%;
+  }
+}

@@ -1,311 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./static/glider.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="main">
-      <nav>
-        <div class="nav-bar">
-          <div class="hamburger" onclick="hamburgerFunction()">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-          </div>
 
-          <div class="links">
-            <ul>
-              <li>
-                <a href="#about">About Company</a>
-                <ul class="dropdown">
-                  <li>
-                    <a href="./pages/company.html">Our Company </a>
-                  </li>
-                  <li>
-                    <a href="./pages/history.html">History</a>
-                  </li>
-                  <li>
-                    <a href="./pages/press.html">Press</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="#processors">Digital Speakers Processors</a>
-                <ul class="dropdown">
-                  <li>
-                    <a href="./pages/dsp/silver-control.html">Silver Control</a>
-                  </li>
-                  <li>
-                    <a href="./pages/dsp/solid-control.html">Solid Control</a>
-                  </li>
-                  <li><a href="./pages/dsp/P-3.html">P-3</a></li>
-                  <li><a href="./pages/dsp/P-1.html">P-1</a></li>
-                  <li><a href="./pages/dsp/gadget.html">Gadget</a></li>
-                  <li>
-                    <a href="./pages/dsp/gadget-multi.html">Gadget Multi</a>
-                  </li>
-                  <li>
-                    <a href="./pages/dsp/gadget-mini.html">Gadget Mini</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="#speakers">Speakers</a>
-                <ul>
-                  <li>
-                    <a href="./pages/speakers/wing-speaker-system.html"
-                      >Wing Speaker System</a
-                    >
-                  </li>
-                  <li>
-                    <a href="./pages/speakers/vintage-ribbon.html"
-                      >Vintage Ribbon</a
-                    >
-                  </li>
-                  <li>
-                    <a href="./pages/speakers/vintage-horten.html"
-                      >Vintage Horten</a
-                    >
-                  </li>
-                  <li>
-                    <a href="./pages/speakers/vintage-oslo.html"
-                      >Vintage Oslo</a
-                    >
-                  </li>
-                  <li>
-                    <a href="./pages/speakers/studio-oslo.html">Studio Oslo</a>
-                  </li>
-                  <li>
-                    <a href="./pages/speakers/master-oslo.html">Master Oslo</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="#amp">Amplifiers</a>
-                <ul>
-                  <li>
-                    <a href="./pages/amplifiers/silver-grand-mono.html"
-                      >Silver Grand Mono</a
-                    >
-                  </li>
-                  <li>
-                    <a href="./pages/amplifiers/silver-single-mono.html"
-                      >Silver Single Mono</a
-                    >
-                  </li>
-                  <li>
-                    <a href="./pages/amplifiers/solid-single.html"
-                      >Solid Single</a
-                    >
-                  </li>
-                  <li><a href="./pages/amplifiers/a-3.html">A-3</a></li>
-                  <li><a href="./pages/amplifiers/a-1.html">A-1</a></li>
-                  <li>
-                    <a href="./pages/amplifiers/vintage-amp.html"
-                      >Vintage Amp</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="#preamp">Phono Preamplifiers</a>
-                <ul class="dropdown">
-                  <li>
-                    <a href="./pages/preamplifiers/silver-stage.html"
-                      >Silver Stage</a
-                    >
-                  </li>
-                  <li>
-                    <a href="./pages/preamplifiers/solid-stage.html"
-                      >Solid Stage</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="#players">Cd Players</a>
-                <ul class="dropdown">
-                  <li>
-                    <a href="./pages/cd-players/lektor-grand.html"
-                      >Lektor Grand</a
-                    >
-                  </li>
-                  <li>
-                    <a href="./pages/cd-players/lektor-air.html">Lektor Air</a>
-                  </li>
-                  <li>
-                    <a href="./pages/cd-players/lektor-transport.html"
-                      >Lektor Transport</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li><a href="#archive">Archives</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-          <div class="logo">
-            <img src="./static/img/ancient_audio/u194.png" alt="logo" />
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./static/glider.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="main">
+    <nav>
+      <div class="nav-bar">
+        <div class="hamburger" onclick="hamburgerFunction()">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
         </div>
-      </nav>
 
-      <div class="sections">
-        <div class="about" id="about">
-          <div class="glider">
-            <div>
-              <a href="./pages/company.html"
-                ><div class="panel">
-                  <img
-                    src="./static/img/ancient_audio/u113_c.jpg"
-                    alt="company"
-                  />
-                  <div class="text-wrapper">
+        <div class="links">
+          <ul>
+            <li>
+              <a href="#about">About Company</a>
+              <ul class="dropdown">
+                <li>
+                  <a href="./pages/company.html">Our Company </a>
+                </li>
+                <li>
+                  <a href="./pages/history.html">History</a>
+                </li>
+                <li>
+                  <a href="./pages/press.html">Press</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#processors">Digital Speakers Processors</a>
+              <ul class="dropdown">
+                <li>
+                  <a href="./pages/dsp/silver-control.html">Silver Control</a>
+                </li>
+                <li>
+                  <a href="./pages/dsp/solid-control.html">Solid Control</a>
+                </li>
+                <li><a href="./pages/dsp/P-3.html">P-3</a></li>
+                <li><a href="./pages/dsp/P-1.html">P-1</a></li>
+                <li><a href="./pages/dsp/gadget.html">Gadget</a></li>
+                <li>
+                  <a href="./pages/dsp/gadget-multi.html">Gadget Multi</a>
+                </li>
+                <li>
+                  <a href="./pages/dsp/gadget-mini.html">Gadget Mini</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#speakers">Speakers</a>
+              <ul>
+                <li>
+                  <a href="./pages/speakers/wing-speaker-system.html">Wing Speaker System</a>
+                </li>
+                <li>
+                  <a href="./pages/speakers/vintage-ribbon.html">Vintage Ribbon</a>
+                </li>
+                <li>
+                  <a href="./pages/speakers/vintage-horten.html">Vintage Horten</a>
+                </li>
+                <li>
+                  <a href="./pages/speakers/vintage-oslo.html">Vintage Oslo</a>
+                </li>
+                <li>
+                  <a href="./pages/speakers/studio-oslo.html">Studio Oslo</a>
+                </li>
+                <li>
+                  <a href="./pages/speakers/master-oslo.html">Master Oslo</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#amp">Amplifiers</a>
+              <ul>
+                <li>
+                  <a href="./pages/amplifiers/silver-grand-mono.html">Silver Grand Mono</a>
+                </li>
+                <li>
+                  <a href="./pages/amplifiers/silver-single-mono.html">Silver Single Mono</a>
+                </li>
+                <li>
+                  <a href="./pages/amplifiers/solid-single.html">Solid Single</a>
+                </li>
+                <li><a href="./pages/amplifiers/a-3.html">A-3</a></li>
+                <li><a href="./pages/amplifiers/a-1.html">A-1</a></li>
+                <li>
+                  <a href="./pages/amplifiers/vintage-amp.html">Vintage Amp</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#preamp">Phono Preamplifiers</a>
+              <ul class="dropdown">
+                <li>
+                  <a href="./pages/preamplifiers/silver-stage.html">Silver Stage</a>
+                </li>
+                <li>
+                  <a href="./pages/preamplifiers/solid-stage.html">Solid Stage</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#players">Cd Players</a>
+              <ul class="dropdown">
+                <li>
+                  <a href="./pages/cd-players/lektor-grand.html">Lektor Grand</a>
+                </li>
+                <li>
+                  <a href="./pages/cd-players/lektor-air.html">Lektor Air</a>
+                </li>
+                <li>
+                  <a href="./pages/cd-players/lektor-transport.html">Lektor Transport</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#car">Car Audio</a></li>
+            <li><a href="#archive">Archives</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="logo">
+          <img src="./static/img/ancient_audio/u194.png" alt="logo" />
+        </div>
+      </div>
+    </nav>
+
+    <div class="sections">
+      <div class="about" id="about">
+        <div class="glider">
+          <div>
+            <a href="./pages/company.html">
+              <div class="panel">
+
+                <img src="./static/img/ancient_audio/u113_c.jpg" alt="company" />
+                <p class="soon">Coming soon</p>
+                <p class="section-title">About Us</p>
+                <div class="text-wrapper">
+
                   <h2>Our Company</h2>
                   <div class="main-line"></div>
                   <p>Our philosophy</p>
-                </div>                </div>
-              </a>
-            </div>
-            <div>
-              <a href="./pages/history.html">
-              <div class="panel">
-                <img class="scale-up"
-                  src="./static/img/ancient_audio/u117_c.png"
-                  alt="founder"
-                /> <div class="text-wrapper"><h2>History</h2>
-                  <div class="main-line"></div>
-                  <p>How we started and what we achieved</p></div>
-                
-              </a>
-              </div>
-            </div>
-            
-            <div>
-              <a href="./pages/press.html">
-                <div class="panel">
-                  <img
-                    src="./static/img/ancient_audio/large_u119_c.jpg"
-                    alt="press"
-                  />
-                  <div class="text-wrapper">
-                  <h2>Press</h2>
-                  <div class="main-line"></div>
-                  <p>What world-renowned media are writing about us</p>
                 </div>
-              </a>
-            </div>
-          </div>          
-        </div><div role="tablist" class="dots1"></div>
-        <div class="speakers-processors" id="processors">
-         <div class="wrapper">
-          <div class="glider2">
-            <div>
-              <a href="./pages/dsp/silver-control.html">
+              </div>
+            </a>
+          </div>
+          <div>
+            <a href="./pages/history.html">
               <div class="panel">
+                <p class="section-title">About Us</p>
+                <img class="scale-up" src="./static/img/ancient_audio/u117_c.png" alt="founder" />
+                <div class="text-wrapper">
+                  <h2>History</h2>
+                  <div class="main-line"></div>
+                  <p>How we started<br> and what we achieved</p>
+                </div>
+
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <a href="./pages/press.html">
+            <div class="panel">
+              <p class="section-title">About Us</p>
+              <img src="./static/img/ancient_audio/large_u119_c.jpg" alt="press" />
+              <div class="text-wrapper">
+                <h2>Press</h2>
+                <div class="main-line"></div>
+                <p>What world-renowned media <br>are writing about us</p>
+              </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div role="tablist" class="dots1"></div>
+    <div class="speakers-processors" id="processors">
+      <div class="wrapper">
+        <div class="glider2">
+          <div>
+            <a href="./pages/dsp/silver-control.html">
+              <div class="panel">
+                <p class="section-title">Digital<br>Speaker<br>Processors</p>
                 <img src="./static/img/ancient_audio/u82_c.jpg" alt="silver-control">
                 <div class="text-wrapper">
                   <h2>Silver Control</h2>
                   <div class="main-line"></div>
-                  <p>Vacuum tube DAC/Processor/Preamplifier<br>
-                  Ultimate control of the most demanding systems</p>
+                  <p>Vacuum tube<br> DAC/Processor/Preamplifier<br>
+                    Ultimate control of the most demanding systems
+                  </p>
                 </div>
               </div>
-            </a></div>
-            <div><a href="./pages/dsp/solid-control.html">
+            </a>
+          </div>
+          <div><a href="./pages/dsp/solid-control.html">
               <div class="panel">
+                <p class="section-title">Digital<br>Speaker<br>Processors</p>
                 <img src="./static/img/ancient_audio/3_u87_c.jpg" alt="solid-control">
                 <div class="text-wrapper">
                   <h2>Solid Control</h2>
                   <div class="main-line"></div>
-                  <p>Solid State DAC/Processor/Preamplifier<br>
-                  Versatile center control unit</p>
+                  <p>Solid State<br> DAC/Processor/Preamplifier<br>
+                    Versatile center control unit</p>
                 </div>
               </div>
             </a></div>
-            <div><a href="./pages/dsp/P-3.html">
+          <div><a href="./pages/dsp/P-3.html">
               <div class="panel">
+                <p class="section-title">Digital<br>Speaker<br>Processors</p>
                 <img src="./static/img/ancient_audio/u91_c.jpg" alt="p-3">
                 <div class="text-wrapper">
                   <h2>P-3</h2>
                   <div class="main-line"></div>
                   <p>Solid State Processor/Preamplifier<br>
-                  Hi-End control unit</p>
+                    Hi-End control unit</p>
                 </div>
               </div>
             </a>
           </div>
-            <div>
-              <a href="./pages/dsp/P-1.html">
+          <div>
+            <a href="./pages/dsp/P-1.html">
               <div class="panel">
+                <p class="section-title">Digital<br>Speaker<br>Processors</p>
                 <img src="./static/img/ancient_audio/u95_c.jpg" alt="p-1">
                 <div class="text-wrapper">
                   <h2>P-1</h2>
                   <div class="main-line"></div>
                   <p>Solid State Processor<br>
-                  Basic processor & headphone amp</p>
+                    Basic processor & headphone amp</p>
                 </div>
               </div>
-            </a></div>
-            <div><a href="./pages/dsp/gadget.html">
+            </a>
+          </div>
+          <div><a href="./pages/dsp/gadget.html">
               <div class="panel">
+                <p class="section-title">Digital<br>Speaker<br>Processors</p>
                 <img src="./static/img/ancient_audio/u99_c.jpg" alt="gadget">
                 <div class="text-wrapper">
                   <h2>Gadget</h2>
                   <div class="main-line"></div>
                   <p>Portable processor<br>
-                  For hi-fi systems and headphones</p>
+                    For hi-fi systems and headphones</p>
                 </div>
               </div>
             </a></div>
-            <div><a href="./pages/dsp/gadget-multi.html">
+          <div><a href="./pages/dsp/gadget-multi.html">
               <div class="panel">
+                <p class="section-title">Digital<br>Speaker<br>Processors</p>
                 <img src="./static/img/ancient_audio/u103_c.jpg" alt="gadget-multi">
                 <div class="text-wrapper">
                   <h2>Gadget Multi</h2>
                   <div class="main-line"></div>
                   <p>Multi processor control unit<br>
-                  Custom made for yahts & campers</p>
+                    Custom made for yahts & campers</p>
                 </div>
               </div>
             </a></div>
-            <div><a href="./pages/dsp/gadget-mini.html">
+          <div><a href="./pages/dsp/gadget-mini.html">
               <div class="panel">
+                <p class="section-title">Digital<br>Speaker<br>Processors</p>
                 <img src="./static/img/ancient_audio/u107_c.jpg" alt="gadget-mini">
                 <div class="text-wrapper">
                   <h2>Gadget Mini</h2>
                   <div class="main-line"></div>
                   <p>Portable processor for headphones<br>
-                  Ultimate match of portable players</p>
+                    Ultimate match of portable players</p>
                 </div>
               </div>
             </a></div>
-          </div>
         </div>
-        <div role="tablist" class="dots2"></div>
-        </div>
-        <div class="speakers" id="speakers">
-          <div class="glider3">
-          <div><a href="./pages/speakers/wing-speaker-system.html">
+      </div>
+      <div role="tablist" class="dots2"></div>
+    </div>
+    <div class="speakers" id="speakers">
+      <div class="glider3">
+        <div><a href="./pages/speakers/wing-speaker-system.html">
             <div class="panel">
+              <p class="section-title">Speakers</p>
               <img src="./static/img/ancient_audio/u58_c.jpg" alt="wing-speaker" class="to-right">
               <div class="text-wrapper">
                 <h2>Wing Speaker System</h2>
                 <div class="main-line"></div>
-                <p>Complete, non compromise hi-end system
+                <p>Complete, non compromise <br>hi-end system
                   <br>
-                  Custom Created, reproducing all aspects of music
+                  Custom Created,<br> reproducing all aspects of music
                 </p>
               </div>
             </div>
           </a></div>
-          <div><a href="./pages/speakers/vintage-ribbon.html">
+        <div><a href="./pages/speakers/vintage-ribbon.html">
             <div class="panel">
+              <p class="section-title">Speakers</p>
               <img src="./static/img/ancient_audio/u62_c.jpg" alt="vintage-ribbon" class="center-right">
               <div class="text-wrapper">
                 <h2>Vintage Ribbon</h2>
@@ -313,13 +306,14 @@
                 <p>Speaker system without limits
                   <br>
                   100 dB/W/m efficiency
-                  <br> 15 inch woofer, ribbon midrange/tweeter
+                  <br> 15 inch woofer, <br>ribbon midrange/tweeter
                 </p>
               </div>
             </div>
           </a></div>
-          <div><a href="./pages/speakers/vintage-horten.html">
+        <div><a href="./pages/speakers/vintage-horten.html">
             <div class="panel">
+              <p class="section-title">Speakers</p>
               <img src="./static/img/ancient_audio/podmienic____u66_c.jpg" alt="vintage-horten" class="scale-up">
               <div class="text-wrapper">
                 <h2>Vintage Horten</h2>
@@ -330,9 +324,10 @@
               </div>
             </div>
           </a></div>
-          <div><a href="./pages/speakers/vintage-oslo.html">
+        <div><a href="./pages/speakers/vintage-oslo.html">
             <div class="panel">
-              <img src="./static/img/ancient_audio/u70_c.jpg" alt="vintage-oslo">
+              <p class="section-title">Speakers</p>
+              <img src="./static/img/vintage_oslo/Vintage_Oslo_II_1.jpg" alt="vintage-oslo">
               <div class="text-wrapper">
                 <h2>Vintage Oslo</h2>
                 <div class="main-line"></div>
@@ -342,8 +337,9 @@
               </div>
             </div>
           </a></div>
-          <div><a href="./pages/speakers/studio-oslo.html">
+        <div><a href="./pages/speakers/studio-oslo.html">
             <div class="panel">
+              <p class="section-title">Speakers</p>
               <img src="./static/img/ancient_audio/u74_c.jpg" alt="studio-oslo">
               <div class="text-wrapper">
                 <h2>Studio Oslo</h2>
@@ -354,8 +350,9 @@
               </div>
             </div>
           </a></div>
-          <div><a href="./pages/speakers/master-oslo.html">
+        <div><a href="./pages/speakers/master-oslo.html">
             <div class="panel">
+              <p class="section-title">Speakers</p>
               <img src="./static/img/ancient_audio/u78_c.jpg" alt="master-oslo" class="to-right">
               <div class="text-wrapper">
                 <h2>Master Oslo</h2>
@@ -366,12 +363,14 @@
               </div>
             </div>
           </a></div>
-        </div>
-        <div role="tablist" class="dots3"></div>
       </div>
-        <div class="amp" id="amp"><div class="glider4">
-          <div><a href="./pages/amplifiers/silver-grand-mono.html">
+      <div role="tablist" class="dots3"></div>
+    </div>
+    <div class="amp" id="amp">
+      <div class="glider4">
+        <div><a href="./pages/amplifiers/silver-grand-mono.html">
             <div class="panel">
+              <p class="section-title">Amplifiers</p>
               <img src="./static/img/ancient_audio/u33_c.jpg" alt="silver-grand-mono">
               <div class="text-wrapper">
                 <h2>Silver Grand Mono</h2>
@@ -383,8 +382,9 @@
               </div>
             </div>
           </a></div>
-          <div><a href="./pages/amplifiers/silver-single-mono.html">
+        <div><a href="./pages/amplifiers/silver-single-mono.html">
             <div class="panel">
+              <p class="section-title">Amplifiers</p>
               <img src="./static/img/ancient_audio/u37_c.jpg" alt="silver-single-mono">
               <div class="text-wrapper">
                 <h2>Silver Single Mono</h2>
@@ -395,8 +395,9 @@
               </div>
             </div>
           </a></div>
-          <div><a href="./pages/amplifiers/solid-single.html">
+        <div><a href="./pages/amplifiers/solid-single.html">
             <div class="panel">
+              <p class="section-title">Amplifiers</p>
               <img src="./static/img/ancient_audio/u41_c.jpg" alt="solid-single">
               <div class="text-wrapper">
                 <h2>Solid Single</h2>
@@ -409,8 +410,9 @@
               </div>
             </div>
           </a></div>
-          <div><a href="./pages/amplifiers/a-3.html">
+        <div><a href="./pages/amplifiers/a-3.html">
             <div class="panel">
+              <p class="section-title">Amplifiers</p>
               <img src="./static/img/ancient_audio/u45_c.jpg" alt="a-3">
               <div class="text-wrapper">
                 <h2>A-3</h2>
@@ -421,8 +423,9 @@
               </div>
             </div>
           </a></div>
-          <div><a href="./pages/amplifiers/a-1.html">
+        <div><a href="./pages/amplifiers/a-1.html">
             <div class="panel">
+              <p class="section-title">Amplifiers</p>
               <img src="./static/img/ancient_audio/u49_c.jpg" alt="a-1">
               <div class="text-wrapper">
                 <h2>A-1</h2>
@@ -433,8 +436,9 @@
               </div>
             </div>
           </a></div>
-          <div><a href="./pages/amplifiers/vintage-amp.html">
+        <div><a href="./pages/amplifiers/vintage-amp.html">
             <div class="panel">
+              <p class="section-title">Amplifiers</p>
               <img src="./static/img/ancient_audio/u53_c.jpg" alt="vintage-amp">
               <div class="text-wrapper">
                 <h2>Vintage Amp</h2>
@@ -445,23 +449,28 @@
               </div>
             </div>
           </a></div>
-        </div>
-        <div role="tablist" class="dots4"></div></div>
-        <div class="preamp" id="preamp"><div class="glider5">
-          <div><a href="./pages/preamplifiers/silver-stage.html">
+      </div>
+      <div role="tablist" class="dots4"></div>
+    </div>
+    <div class="preamp" id="preamp">
+      <div class="glider5">
+        <div><a href="./pages/preamplifiers/silver-stage.html">
             <div class="panel">
+              <p class="section-title">Phono<br>Preamplifiers</p>
               <img src="./static/img/ancient_audio/u24_c.jpg" alt="silver-stage" class="center-left">
               <div class="text-wrapper">
                 <h2>Silver Stage</h2>
                 <div class="main-line"></div>
-                <p>MC/MM phono stage for Hi-End systems
+                <p>MC/MM phono stage <br>for Hi-End systems
                   <br>Discrete FET device with tube sound
                 </p>
               </div>
             </div>
           </a></div>
-          <div><a href="./pages/preamplifiers/solid-stage.html">
+        <div><a href="./pages/preamplifiers/solid-stage.html">
             <div class="panel">
+              <p class="section-title">Phono<br>Preamplifiers</p>
+
               <img src="./static/img/ancient_audio/u28_c.jpg" alt="solid-stage">
               <div class="text-wrapper">
                 <h2>Solid Stage</h2>
@@ -472,23 +481,27 @@
               </div>
             </div>
           </a></div>
-        </div>
-        <div role="tablist" class="dots5"></div></div>
-        <div class="cd-players" id="players"><div class="glider6">
-          <div><a href="./pages/cd-players/lektor-grand.html">
+      </div>
+      <div role="tablist" class="dots5"></div>
+    </div>
+    <div class="cd-players" id="players">
+      <div class="glider6">
+        <div><a href="./pages/cd-players/lektor-grand.html">
             <div class="panel">
+              <p class="section-title">CD<br>Players</p>
               <img src="./static/img/ancient_audio/u11_c.jpg" alt="lektor-grand">
               <div class="text-wrapper">
                 <h2>Lektor Grand</h2>
                 <div class="main-line"></div>
                 <p>Three piece CD player
-                  <br>Top loading, top sound quality, top design
+                  <br>Top loading, <br>top sound quality, top design
                 </p>
               </div>
             </div>
           </a></div>
-          <div><a href="./pages/cd-players/lektor-air.html">
+        <div><a href="./pages/cd-players/lektor-air.html">
             <div class="panel">
+              <p class="section-title">CD<br>Players</p>
               <img src="./static/img/ancient_audio/u15_c.jpg" alt="lektor-air">
               <div class="text-wrapper">
                 <h2>Lektor Air</h2>
@@ -499,8 +512,9 @@
               </div>
             </div>
           </a></div>
-          <div><a href="./pages/cd-players/lektor-transport.html">
+        <div><a href="./pages/cd-players/lektor-transport.html">
             <div class="panel">
+              <p class="section-title">CD<br>Players</p>
               <img src="./static/img/ancient_audio/u19_c.jpg" alt="lektor-transport">
               <div class="text-wrapper">
                 <h2>Lektor Transport</h2>
@@ -511,33 +525,53 @@
               </div>
             </div>
           </a></div>
+      </div>
+      <div role="tablist" class="dots6"></div>
+    </div>
+    <div class="car-audio" id="car">
+      <a href="./pages/car-audio.html">
+        <div class="panel">
+          <p class="section-title">Car Audio</p>
+          <img src="./static/img/car-audio/Car_Audio_front.jpg" alt="car-audio">
+          <div class="text-wrapper">
+            <h2>Car Audio</h2>
+            <div class="main-line"></div>
+            <p>Innovative solution for your car</p>
+          </div>
         </div>
-        <div role="tablist" class="dots6"></div></div>
-        <div class="archive" id="archive">
-          <a href="#">
-            <div class="panel">
-              <img src="./static/img/ancient_audio/u6_c.jpg" alt="archive">
-              <div class="text-wrapper">
-              <h2>Archives</h2>
-              <div class="main-line"></div>
-              <p>Some of the old products that we made that are worth mentioning</p>
-            </div></div>
-          </a>
+      </a>
+    </div>
+    <div class="archive" id="archive">
+      <a href="#">
+        <div class="panel">
+          <p class="section-title">Archives</p>
+          <img src="./static/img/ancient_audio/u6_c.jpg" alt="archive">
+          <div class="text-wrapper">
+            <h2>Archives</h2>
+            <div class="main-line"></div>
+            <p>Some of the old products that we made that are worth mentioning</p>
+          </div>
         </div>
-        <div class="contact" id="contact">
-          <a href="#">
-          <div class="panel">
-            <img src="./static/img/ancient_audio/zdj_cie_8__ok__u0_c.jpg" alt="contact" class="center-left">
-            <div class="text-wrapper">
+      </a>
+    </div>
+    <div class="contact" id="contact">
+      <a href="#">
+        <div class="panel">
+          <p class="section-title">Contact</p>
+          <img src="./static/img/ancient_audio/zdj_cie_8__ok__u0_c.jpg" alt="contact" class="center-left">
+          <div class="text-wrapper">
             <h2>Contact</h2>
             <div class="main-line"></div>
-            <p>Contact us to get a quotation or make an inquiry for your special needs</p>
-          </div></div>
-        </a></div>
-      </div>
+            <p>Contact us to get a quotation or make<br> an inquiry for your special needs</p>
+          </div>
+        </div>
+      </a>
     </div>
-    <script src="static/script.js"></script>
-    <script src="static/glider.js"></script>
-  </body>
-  <footer></footer>
+  </div>
+  </div>
+  <script src="static/script.js"></script>
+  <script src="static/glider.js"></script>
+</body>
+
+
 </html>

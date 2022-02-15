@@ -28,6 +28,18 @@ nav {
         margin: 10px 25px;
       }
     }
+    .section-title {
+      width: 20%;
+      text-align: left;
+      p {
+        color: $navTextColor;
+        font-size: 40px;
+        margin: 10px 25px;
+        @media (max-width:450px) {
+          font-size: 25px;
+        }
+      }
+    }
 
     .hamburger {
       color: $navTextColor;
