@@ -256,6 +256,13 @@ nav .nav-bar .links.visible ul li ul li a {
      object-position: center;
 }
 
+@media (max-width: 680px) {
+  .section .image-main .car-audio {
+    -webkit-transform: translateX(-150px);
+            transform: translateX(-150px);
+  }
+}
+
 .section .image-main p {
   position: absolute;
   color: #cfcfd6;
@@ -428,6 +435,22 @@ nav .nav-bar .links.visible ul li ul li a {
 
 .sections .panel img.scale-up {
   height: 1200px;
+}
+
+.sections .panel .press {
+  width: auto;
+}
+
+@media (min-height: 691px) {
+  .sections .panel .press {
+    max-height: 100vh;
+  }
+}
+
+@media (max-height: 690px) {
+  .sections .panel .press {
+    width: 100%;
+  }
 }
 
 .sections .panel .text-wrapper {

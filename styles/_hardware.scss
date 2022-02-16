@@ -49,6 +49,16 @@
         height: 1200px;
       }
     }
+    .press{
+      width: auto;
+      @media (min-height: 691px) {
+        max-height: 100vh;
+      }
+
+      @media (max-height: 690px) {
+        width: 100%;
+      }
+    }
     .text-wrapper {
       width: 100%;
       position: absolute;

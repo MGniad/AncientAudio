@@ -38,7 +38,14 @@ $textColor: rgb(207, 207, 214);
       // @media (min-width: 1170px) {
       //   width: 200%;
       // }
+      
     }
+    @media (max-width:680px) {
+      .car-audio{
+        transform: translateX(-150px);
+      }  
+    }
+    
     p {
       position: absolute;
       color: $textColor;
