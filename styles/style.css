@@ -421,20 +421,9 @@ nav .nav-bar .links.visible ul li ul li a {
 }
 
 .sections .panel img {
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-@media (min-height: 401px) {
-  .sections .panel img {
-    max-height: 100vh;
-  }
-}
-
-@media (max-height: 400px) {
-  .sections .panel img {
-    width: 100%;
-  }
 }
 
 .sections .panel img.scale-up {
