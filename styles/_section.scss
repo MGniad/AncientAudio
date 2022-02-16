@@ -3,6 +3,21 @@ $textColor: rgb(207, 207, 214);
 .section {
   padding: 10px;
   overflow: hidden;
+  .articles{
+    display: block;
+    a {
+      display: block;
+      text-align: center;
+      width: 100%;
+      padding: 10px;
+      font-size: 25px;
+      color: black;
+      transition: 0.5s;
+      &:hover{
+        font-size: 30px;
+      }
+    }
+  }
   .image-main {
     width: 100%;
 
@@ -146,3 +161,4 @@ $textColor: rgb(207, 207, 214);
     width: 100%;
   }
 }
+

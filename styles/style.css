@@ -214,6 +214,25 @@ nav .nav-bar .links.visible ul li ul li a {
   overflow: hidden;
 }
 
+.section .articles {
+  display: block;
+}
+
+.section .articles a {
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  font-size: 25px;
+  color: black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.section .articles a:hover {
+  font-size: 30px;
+}
+
 .section .image-main {
   width: 100%;
   padding-bottom: 15px;
