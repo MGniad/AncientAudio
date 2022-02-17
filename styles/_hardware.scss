@@ -12,17 +12,7 @@
     text-align: center;
     display: flex;
     justify-content: center;
-    .soon {
-      position: absolute;
-      z-index: 1000;
-      color: rgb(230, 3, 3);
-      top: 30%;
-      font-size: 4em;
-      border: 10px red solid;
-      border-radius: 25px;
-      transform: rotate(-35deg);
-      font-family: "Holtwood One SC", serif;
-    }
+
     .section-title {
       position: absolute;
       z-index: 1000;

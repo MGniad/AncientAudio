@@ -3,7 +3,7 @@ $textColor: rgb(207, 207, 214);
 .section {
   padding: 10px;
   overflow: hidden;
-  .articles{
+  .articles {
     display: block;
     a {
       display: block;
@@ -13,7 +13,7 @@ $textColor: rgb(207, 207, 214);
       font-size: 25px;
       color: black;
       transition: 0.5s;
-      &:hover{
+      &:hover {
         font-size: 30px;
       }
     }
@@ -30,6 +30,24 @@ $textColor: rgb(207, 207, 214);
     // .enlarge {
     //   width: 1000px;
     // }
+    .soon-wrapper {
+      width: 100%;
+      height: 100vh;
+      .soon {
+        text-align: center;
+        position: absolute;
+        z-index: 1000;
+        color: rgb(230, 3, 3);
+        top: 30%;
+        left: 50%;
+        font-size: 3.5em;
+        padding: 10px;
+        border: 10px red solid;
+        border-radius: 25px;
+        transform: translateX(-50%);
+        font-family: "Holtwood One SC", serif;
+      }
+    }
     img {
       width: 150%;
       height: 75vh;
@@ -38,14 +56,13 @@ $textColor: rgb(207, 207, 214);
       // @media (min-width: 1170px) {
       //   width: 200%;
       // }
-      
     }
-    @media (max-width:680px) {
-      .car-audio{
+    @media (max-width: 680px) {
+      .car-audio {
         transform: translateX(-150px);
-      }  
+      }
     }
-    
+
     p {
       position: absolute;
       color: $textColor;
@@ -168,4 +185,3 @@ $textColor: rgb(207, 207, 214);
     width: 100%;
   }
 }
-
