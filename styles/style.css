@@ -410,7 +410,7 @@ nav .nav-bar .links.visible ul li ul li a {
   border-radius: 25px;
   -webkit-transform: rotate(-35deg);
           transform: rotate(-35deg);
-  font-family: 'Holtwood One SC', serif;
+  font-family: "Holtwood One SC", serif;
 }
 
 .sections .panel .section-title {
@@ -441,13 +441,13 @@ nav .nav-bar .links.visible ul li ul li a {
   width: auto;
 }
 
-@media (min-height: 691px) {
+@media (min-height: 550px) {
   .sections .panel .press {
     max-height: 100vh;
   }
 }
 
-@media (max-height: 690px) {
+@media (max-height: 549px) {
   .sections .panel .press {
     width: 100%;
   }

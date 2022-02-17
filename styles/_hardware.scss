@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Freehand&family=Holtwood+One+SC&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Freehand&family=Holtwood+One+SC&display=swap");
 
 .sections {
   width: 100%;
@@ -12,18 +12,18 @@
     text-align: center;
     display: flex;
     justify-content: center;
-    .soon{
-      position:absolute;
+    .soon {
+      position: absolute;
       z-index: 1000;
       color: rgb(230, 3, 3);
       top: 30%;
-      font-size:4em;
-      border:10px red solid;
+      font-size: 4em;
+      border: 10px red solid;
       border-radius: 25px;
       transform: rotate(-35deg);
-      font-family: 'Holtwood One SC', serif;
+      font-family: "Holtwood One SC", serif;
     }
-    .section-title{
+    .section-title {
       position: absolute;
       z-index: 1000;
       top: 10%;
@@ -49,13 +49,13 @@
         height: 1200px;
       }
     }
-    .press{
+    .press {
       width: auto;
-      @media (min-height: 691px) {
+      @media (min-height: 550px) {
         max-height: 100vh;
       }
 
-      @media (max-height: 690px) {
+      @media (max-height: 549px) {
         width: 100%;
       }
     }
