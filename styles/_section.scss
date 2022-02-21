@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Freehand&family=Roboto:wght@300;400;500&display=swap");
 $textColor: rgb(207, 207, 214);
 
 .section {
@@ -97,17 +98,12 @@ $textColor: rgb(207, 207, 214);
     text-justify: inter-word;
     font-size: 20px;
   }
-  // img:first-child {
-  //   width: auto;
-  //   @media (max-width: 650px) {
-  //     transform: translateX(-25%);
-  //   }
-  //   @media (max-width: 400px) {
-  //     transform: translateX(-35%);
-  //   }
-  // }
   img {
     width: 100%;
+  }
+  .signature {
+    font-family: "Freehand", cursive;
+    text-align: right;
   }
 }
 $textColor: rgb(207, 207, 214);

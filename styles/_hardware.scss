@@ -38,6 +38,12 @@
       &.scale-up {
         height: 1200px;
       }
+      &.to-right {
+        object-position: 30%;
+      }
+      &.to-left {
+        object-position: 70%;
+      }
     }
     .press {
       width: auto;

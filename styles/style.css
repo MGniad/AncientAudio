@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Freehand&family=Roboto:wght@300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Freehand&family=Holtwood+One+SC&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Freehand&family=Roboto:wght@300;400;500&display=swap");
 a {
@@ -327,6 +328,11 @@ nav .nav-bar .links.visible ul li ul li a {
   width: 100%;
 }
 
+.section .signature {
+  font-family: "Freehand", cursive;
+  text-align: right;
+}
+
 .section-technology {
   padding: 15px;
   overflow: hidden;
@@ -445,6 +451,16 @@ nav .nav-bar .links.visible ul li ul li a {
   height: 1200px;
 }
 
+.sections .panel img.to-right {
+  -o-object-position: 30%;
+     object-position: 30%;
+}
+
+.sections .panel img.to-left {
+  -o-object-position: 70%;
+     object-position: 70%;
+}
+
 .sections .panel .press {
   width: auto;
 }
@@ -523,8 +539,8 @@ a {
 }
 
 .welcome-card .welcome-container .news img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   -o-object-position: center;
      object-position: center;
   max-width: 100%;
@@ -581,25 +597,36 @@ a {
 
 .welcome-card .bottom {
   font-size: 40px;
-  font-family: 'Freehand', cursive;
+  font-family: "Freehand", cursive;
   text-align: center;
 }
 
 .footer {
+  width: 106%;
+  -webkit-transform: translateX(-5%);
+          transform: translateX(-5%);
   margin: 0 auto;
+  padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer a {
+  color: #000000;
 }
 
 .footer p {
