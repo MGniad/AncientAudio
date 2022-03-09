@@ -302,6 +302,10 @@ nav .nav-bar .links.visible ul li ul li a {
   width: 33%;
 }
 
+.section .contact-container {
+  padding: 10px;
+}
+
 .section ul {
   list-style-type: none;
   margin-left: 0;
