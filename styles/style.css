@@ -234,6 +234,77 @@ nav .nav-bar .links.visible ul li ul li a {
   font-size: 30px;
 }
 
+.section .review-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (max-width: 500px) {
+  .section .review-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.section .review-container .review-box {
+  border-radius: 25px;
+  -webkit-box-shadow: -1px 0px 32px -5px rgba(0, 0, 0, 0.7);
+  box-shadow: -1px 0px 32px -5px rgba(0, 0, 0, 0.7);
+  width: 30%;
+  padding: 10px;
+  margin: 5px;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+}
+
+@media (max-width: 500px) {
+  .section .review-container .review-box {
+    width: 90%;
+  }
+}
+
+.section .review-container .review-box:hover {
+  -webkit-transform: scale(105%);
+          transform: scale(105%);
+}
+
+.section .review-container .review-box a {
+  text-decoration: none;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section .review-container .review-box p {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.section .review-container .review-box p:first-of-type {
+  height: 150px;
+}
+
+.section .review-container .review-box p:last-of-type {
+  background-color: #d4b66c;
+}
+
 .section .image-main {
   width: 100%;
   padding-bottom: 15px;
@@ -463,6 +534,11 @@ nav .nav-bar .links.visible ul li ul li a {
 .sections .panel img.to-left {
   -o-object-position: 70%;
      object-position: 70%;
+}
+
+.sections .panel img.to-left-25 {
+  -o-object-position: 60%;
+     object-position: 60%;
 }
 
 .sections .panel .press {

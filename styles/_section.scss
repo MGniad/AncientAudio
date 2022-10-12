@@ -19,6 +19,47 @@ $textColor: rgb(207, 207, 214);
       }
     }
   }
+
+  .review-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    @media (max-width: 500px) {
+      flex-direction: column;
+    }
+    .review-box {
+      border-radius: 25px;
+      -webkit-box-shadow: -1px 0px 32px -5px rgba(0, 0, 0, 0.7);
+      box-shadow: -1px 0px 32px -5px rgba(0, 0, 0, 0.7);
+      width: 30%;
+      padding: 10px;
+      margin: 5px;
+      transition: 0.75s;
+      @media (max-width: 500px) {
+        width: 90%;
+      }
+      &:hover {
+        transform: scale(105%);
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      p {
+        font-size: 14px;
+        font-style: italic;
+        &:first-of-type {
+          height: 150px;
+        }
+        &:last-of-type {
+          background-color: #d4b66c;
+        }
+      }
+    }
+  }
   .image-main {
     width: 100%;
 
@@ -80,7 +121,7 @@ $textColor: rgb(207, 207, 214);
       width: 33%;
     }
   }
-  .contact-container{
+  .contact-container {
     padding: 10px;
   }
   ul {
